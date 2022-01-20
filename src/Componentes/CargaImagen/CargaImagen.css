@@ -1,0 +1,72 @@
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100%;
+}
+.contendor-imagen-precarga {
+  text-align: center;
+}
+.imagen-precarga {
+  margin: auto;
+}
+.img {
+  width: 200px;
+  max-width: 200%;
+  height: 300px;
+  border-radius: 15px;
+  border: #ff008e solid 2px;
+  object-fit: cover;
+}
+.titulo-carga-imagen {
+  margin-bottom: 20px;
+}
+.botones {
+  margin: auto;
+}
+
+.btn-guardar,
+.btn-subir {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+.btn-guardar {
+  background-color: #ff008e;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.btn-guardar:hover {
+  box-shadow: 0 0 10px #ff008e;
+}
+.btn-subir {
+  position: relative;
+  display: inline-block;
+}
+.btn-subir:hover {
+  box-shadow: 0 0 10px #5800ff;
+}
+
+.btn-subir::before {
+  background-color: #5800ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: "Subir";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: white;
+}
+
+.btn-subir input[type="file"] {
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  display: inline-block;
+}
